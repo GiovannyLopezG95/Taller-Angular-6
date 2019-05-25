@@ -1,0 +1,22 @@
+<!--Columnas para mostrarlo centrado-->
+<div class="col-md-6 mx-auto mt-5">  
+  <div class="card">
+    <!--titulo-->
+    <div class="card-header">¡Bienvenido!</div>
+    <div class="card-body">
+      <form (submit)="onSubmitLogin()">
+        <!--Formulario y sus respectivos campos-->
+        <div class="form-group row">
+            <label for="email">Correo Electronico </label>
+            <input type="email" name="email" class="form-control" id="email" [(ngModel)]="email" placeholder="Correo Electronico">
+          </div>
+          <div class="form-group row">
+            <label for="password">Contraseña</label>
+            <input type="password" name="password" class="form-control" id="password" [(ngModel)]="password" placeholder="Contraseña">
+          </div>
+          <!--Botón-->
+          <input type="submit" value="Inciar Sesión" class="btn btn-primary btn-block">
+      </form>
+    </div>
+  </div>
+</div>

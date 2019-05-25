@@ -1,0 +1,22 @@
+<div class="col-md-6 mx-auto mt-5">
+    <div class="card">
+      <div class="card-header">¡Formulario de Registro!</div>
+      <div class="card-body">
+        <!--al  darle click se ejecuatara la funcion-->
+        <form (submit)="onSubmitAddUser()">
+          <div class="form-group row">
+              <label for="email">Correo Electronico</label>
+              <!--enlace en la definicion de componentes-->
+              <input type="email" name="email" class="form-control" id="email"
+              [(ngModel)]="email" placeholder="Correo Electronico">
+          </div>
+          <div class="form-group row">
+            <label for="password">Contraseña</label>
+            <input type="password" name="password" class="form-control" id="password"
+            [(ngModel)]="password" placeholder="Contraseña">
+          </div>
+          <input type="submit" value="Finalizar Registro" class="btn btn-primary btn-block">
+        </form>
+      </div>
+    </div>
+  </div>
